@@ -1,0 +1,12 @@
+//Helpers
+@import './sass/Helpers/variables';
+@import './sass/Helpers/mixin';
+
+//Base
+@import './sass/Base/reset';
+@import './sass/Base/customize';
+
+//Pages
+@import './sass/Pages/index';
+@import './sass/Pages/register';
+@import './sass/Pages/detail';
