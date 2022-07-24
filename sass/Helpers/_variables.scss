@@ -1,22 +1,39 @@
-// text-color
-$color-black: #181818;
-$color-purple: #b61984;
-$color-white: #fff;
+//bg color:
+$color-bg-header: #F5F5F5;
+$color-bg-card: #F8F8F8;
+$color-buttonTop: #F8B653;
+$color-buttonLeft: #E1B067;
+$color-buttonRight: #DEDDDC;
+$color-button-purple:#AE18E2;
+$color-button-gradient-1: linear-gradient(180deg, #6181F3 0%, #7C97F5 99.48%);
+$color-button-gradient-2: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
 
-//bg:
-$color-bg-gray: #dcd1f3;
-
-//text-size
-$text-sm: 13px;
-$text-title: 1.1rem;
-$text-big-title: 3.8rem;
-$text-p: .9rem;
+//font-size
+$text-sm: 16px;
 $text-md: 20px;
-$text-lg: 36px;
-$text-xl: 42px;
+$text-lg: 24px;
+$text-xl: 30px;
+$text-xxl: 40px;
 
 //font-weight
-$text-light: 300;
-$text-regular: 400;
-$text-semibold: 600;
-$text-bold: 700;
+$font-extraLight: 200;
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+
+// text-color
+$color-black: #000000;
+$color-white: #FFFFFF;
+$color-red: #FC0303;
+$color-green: #1ED90E;
+$color-p: #140101;
+$color-size: #1E1D1D;
+$color-button-sm: #FFFCFC;
+$color-button-big: #FFF8F8;
+
+
+
+
+
