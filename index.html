@@ -23,99 +23,102 @@
 <body>
     <header class="bg-dark">
         <div class="container ">
-            <nav class="navbar navbar-expand-sm navbar-dark ">
+            <nav class="navbar navbar-dark header__nav ">
                 <a class="navbar-brand" href="#">
                     <img src="./img/image 3.png" alt="">
                 </a>
-                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                    aria-label="Toggle navigation"></button>
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <div class="navbar-nav me-auto mt-2 mt-lg-0">
-                        
-                    </div>
-                    <div class="d-flex my-2 my-lg-0">
+                <div class="header__menu">
+                    <div class="menu__item">
                         <a href="#">
+
                             <img src="./img/image 8.png" alt="">
-                            <span>(1)</span>
-                        </a>
-                        <a href="#">
+                            <span>
+                                (1)
+                            </span>
+
                             <span>Login</span>
-                        </a>
-                        <a href="#">
                             <span>Register</span>
                         </a>
                     </div>
-
                 </div>
             </nav>
         </div>
     </header>
     <section class="menu">
-        <ul>
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">Men</a>
-            </li>
-            <li>
-                <a href="#">Woman</a>
-            </li>
-            <li>
-                <a href="#">Kid</a>
-            </li>
-            <li>
-                <a href="#">Sport</a>
-            </li>
-        </ul>
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="#" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="#">Men</a>
+                </li>
+                <li>
+                    <a href="#">Woman</a>
+                </li>
+                <li>
+                    <a href="#">Kid</a>
+                </li>
+                <li>
+                    <a href="#">Sport</a>
+                </li>
+            </ul>
+        </div>
     </section>
-    <section class="carousel">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators indicate-circle">
-                <button style="background-color: red;" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+    <section class="carousel__big">
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-indicators indicate-circle">
+                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner carousel-content">
+                    <div class="carousel-item active">
+                        <div class="carousel__wrap">
+                            <img src="./img/image 4.png" alt="...">
+                            <div class="carousel__content">
+                                <h3>Product name</h3>
+                                <p>Product description...</p>
+                                <button>Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel__wrap">
+                            <img src="./img/image 4.png" alt="...">
+                            <div class="carousel__content">
+                                <h3>Product name</h3>
+                                <p>Product description...</p>
+                                <button>Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel__wrap">
+                            <img src="./img/image 4.png" alt="...">
+                            <div class="carousel__content">
+                                <h3>Product name</h3>
+                                <p>Product description...</p>
+                                <button>Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="carousel-inner carousel-content">
-                <div class="carousel-item active">
-                    <img src="./img/image 4.png" class="d-block w-100" alt="...">
-                    <div>
-                        <h3>Product name</h3>
-                        <p>Product description...</p>
-                        <button>Buy now</button>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/image 4.png" class="d-block w-100" alt="...">
-                    <div>
-                        <h3>Product name</h3>
-                        <p>Product description...</p>
-                        <button>Buy now</button>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/image 4.png" class="d-block w-100" alt="...">
-                    <div>
-                        <h3>Product name</h3>
-                        <p>Product description...</p>
-                        <button>Buy now</button>
-                    </div>
-                </div>
-            </div>
-            <button style="background-color: red;" class="carousel-control-prev" type="button"
-                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button style="background-color: red;" class="carousel-control-next" type="button"
-                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </section>
     <section class="product__feature">
