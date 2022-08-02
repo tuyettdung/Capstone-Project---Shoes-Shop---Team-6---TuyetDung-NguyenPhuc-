@@ -61,16 +61,19 @@ header {
         }
     }
 }
+
 .carousel__big {
     background-image: url(../../img/image\ 6.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+
     .container {
         .carousel {
             .carousel-indicators {
                 bottom: 80px;
             }
+
             .carousel-indicators [data-bs-target] {
                 width: 10px;
                 height: 10px;
@@ -79,6 +82,7 @@ header {
                 background-color: none;
                 border: 2px solid rgba(0, 0, 0, 0.13);
             }
+
             .carousel-inner {
                 overflow: hidden;
 
@@ -116,24 +120,108 @@ header {
                                     border: 1px solid #F8B653;
                                 }
                             }
+                            
                         }
                     }
                 }
             }
+
             .carousel-control-prev {
                 justify-content: left;
+
                 .carousel-control-prev-icon {
                     background-image: url(../../img/Polygon\ 2.png);
                     height: 3rem;
                 }
             }
+
             .carousel-control-next {
                 justify-content: right;
+
                 .carousel-control-next-icon {
                     background-image: url(../../img/Polygon\ 1.png);
                     height: 3rem;
                 }
             }
         }
+    }
+
+}
+
+.product__feature {
+    margin: 50px 0;
+
+    h2 {
+        @include styleText ($text-xxl, $font-regular, $color-black, 48px);
+        text-align: center;
+        padding-bottom: 35px;
+    }
+
+    .container {
+        padding-left: 55px;
+
+        .product__item {
+            margin-top: 60px;
+
+            .card__wrap {
+                width: 330px;
+                background-color: #F8F8F8;
+
+                .card__body {
+                    padding: 28px;
+                    padding-bottom: 20px;
+
+                    img {
+                        width: 220px;
+                        height: 156px;
+                        padding-left: 26px;
+                        padding-top: 20px;
+                    }
+
+                    h4 {
+                        padding-top: 28px;
+                        @include styleText ($text-lg, $font-light, $color-black, 29px);
+                    }
+
+                    p {
+                        @include styleText ($text-md, $font-light, #CBC9C9, 24px);
+                        padding-top: 14px;
+                    }
+                }
+
+                .card__footer {
+                    display: flex;
+                    text-align: center;
+
+                    .card__left {
+                        width: 50%;
+                        padding: 18px;
+                        background-color: $color-buttonLeft;
+                        @include styleText ($text-lg, $font-extraLight, $color-black, 29px);
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: transparent;
+                            border: 1px solid $color-buttonLeft;
+                            font-weight: $font-bold;
+                        }
+                    }
+
+                    .card__right {
+                        width: 50%;
+                        padding: 18px;
+                        background-color: $color-buttonRight;
+                        @include styleText ($text-lg, $font-semibold, $color-black, 29px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    img {
+        margin-top: 40px;
+        width: 100%;
     }
 }

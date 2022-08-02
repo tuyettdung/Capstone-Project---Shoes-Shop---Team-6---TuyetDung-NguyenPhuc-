@@ -194,3 +194,82 @@ header .container .header__nav .header__menu .menu__item a span:hover {
   background-image: url(../../img/Polygon\ 1.png);
   height: 3rem;
 }
+
+.product__feature {
+  margin: 50px 0;
+}
+.product__feature h2 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 48px;
+  text-align: center;
+  padding-bottom: 35px;
+}
+.product__feature .container {
+  padding-left: 55px;
+}
+.product__feature .container .product__item {
+  margin-top: 60px;
+}
+.product__feature .container .product__item .card__wrap {
+  width: 330px;
+  background-color: #F8F8F8;
+}
+.product__feature .container .product__item .card__wrap .card__body {
+  padding: 28px;
+  padding-bottom: 20px;
+}
+.product__feature .container .product__item .card__wrap .card__body img {
+  width: 220px;
+  height: 156px;
+  padding-left: 26px;
+  padding-top: 20px;
+}
+.product__feature .container .product__item .card__wrap .card__body h4 {
+  padding-top: 28px;
+  font-size: 24px;
+  font-weight: 300;
+  color: #000000;
+  line-height: 29px;
+}
+.product__feature .container .product__item .card__wrap .card__body p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #CBC9C9;
+  line-height: 24px;
+  padding-top: 14px;
+}
+.product__feature .container .product__item .card__wrap .card__footer {
+  display: flex;
+  text-align: center;
+}
+.product__feature .container .product__item .card__wrap .card__footer .card__left {
+  width: 50%;
+  padding: 18px;
+  background-color: #E1B067;
+  font-size: 24px;
+  font-weight: 200;
+  color: #000000;
+  line-height: 29px;
+  cursor: pointer;
+}
+.product__feature .container .product__item .card__wrap .card__footer .card__left:hover {
+  background-color: transparent;
+  border: 1px solid #E1B067;
+  font-weight: 700;
+}
+.product__feature .container .product__item .card__wrap .card__footer .card__right {
+  width: 50%;
+  padding: 18px;
+  background-color: #DEDDDC;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 29px;
+}
+
+footer img {
+  margin-top: 40px;
+  width: 100%;
+}
