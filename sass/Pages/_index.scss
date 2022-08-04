@@ -10,21 +10,20 @@ header {
                     position: absolute;
                     top: 14px;
                     right: 0px;
-
                     a {
                         span {
                             font-style: normal;
-
                             @include styleText($text-sm, $font-light, $color-white, 19px);
                             padding-right: 30px;
                             top: 15px;
-
                             &:hover {
                                 font-weight: $font-bold;
                             }
                         }
-
                     }
+                        
+
+                    
                 }
             }
         }
