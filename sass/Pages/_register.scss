@@ -1,0 +1,82 @@
+.register {
+    .container {
+        h1 {
+            @include styleText ($text-xxl, $font-regular, $color-black, 48px);
+            text-align: center;
+            margin: 30px;
+        }
+
+        .register__form {
+            padding-top: 20px;
+
+            form {
+                .row {
+                    text-align: center;
+                    padding: 0 80px;
+
+                    .form__left {
+
+                        .input__item {
+                            input {
+                                padding-left: 5px;
+                                margin-bottom: 40px;
+                                border: none;
+                                @include styleText ($text-lg, $font-regular, $color-black, 36px);
+                            }
+
+                            span {
+                                color: red;
+                                padding-left: 80px;
+                            }
+
+                            .input__line {
+                                position: relative;
+                                &::before {
+                                    position: absolute;
+                                    content: "";
+                                    bottom: 30px;
+                                    left: 50px;
+                                    width: 430px;
+                                    height: 4px;
+                                    background-color: rgba(174, 24, 226, 1);
+
+                                }
+                            }
+                        }
+                    }
+
+                    .form__right {
+                        .input__gender {
+                            text-align: left;
+                            padding: 15px;
+                            margin-left: 30px;
+
+                            span {
+                                @include styleText ($text-xl, $font-regular, $color-black, 36px);
+                            }
+
+                            input {
+                                margin-left: 10px;
+                            }
+                            input[type=radio] {
+                                border: 0px;
+                                width: 10%;
+                                height: 1.5em;
+                            }
+
+                        }
+
+                        button {
+                            @include styleText ($text-lg, $font-light, $color-white, 36px);
+                            padding: 6px 65px;
+                            margin-top: 50px;
+                            background-color: #AE18E2;
+                            border: none;
+                            margin-right: 220px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

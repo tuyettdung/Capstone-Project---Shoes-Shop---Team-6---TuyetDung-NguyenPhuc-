@@ -1,65 +1,114 @@
 header {
-    position: relative;
+    .header__top {
+        padding: 15px;
+        background-color: $color-black;
 
-    .container {
-        .header__nav {
-            a {}
+        @media screen and (max-width:1199.98px) {
+            width: 104%;
+        }
 
-            .header__menu {
-                .menu__item {
-                    position: absolute;
-                    top: 14px;
-                    right: 0px;
-                    a {
-                        span {
-                            font-style: normal;
+        .container {
+            display: flex;
+            justify-content: space-between;
+
+            a {
+
+                img {
+                    padding-left: 30px;
+                }
+            }
+
+            .header__item {
+                display: flex;
+                align-items: center;
+
+
+                a {
+                    img {
+                        @media screen and (max-width:767.98px) {
+                            width: 90%;
+                        }
+
+                    }
+
+                }
+
+                span {
+                    @include styleText($text-md, $font-light, $color-white, 19px);
+                    padding-right: 30px;
+
+                    @media screen and (max-width:575.98px) {
+                        font-size: 14px;
+                        padding-right: 12px;
+                    }
+                }
+
+                ul {
+                    display: flex;
+                    align-items: center;
+
+
+                    li {
+                        a {
                             @include styleText($text-sm, $font-light, $color-white, 19px);
                             padding-right: 30px;
-                            top: 15px;
+
                             &:hover {
                                 font-weight: $font-bold;
                             }
+
+                            @media screen and (max-width:575.98px) {
+                                font-size: 14px;
+                                padding-right: 12px;
+                            }
+
                         }
                     }
-                        
-
-                    
                 }
             }
         }
     }
-}
 
-.menu {
-    padding: 20px;
+    .header__menu {
+        @media screen and (max-width:1199.98px) {
+            padding-left: 30px;
+        }
 
-    ul {
-        display: flex;
+        .container-xl {
+            margin-top: 20px;
 
-        li {
-            position: relative;
+            .navbar-expand-lg {
+                .navbar-toggler {
+                    .navbar-toggler-icon{
+                     
+                    }
+                }
 
-            a {
-                margin-right: 35px;
-                @include styleText($text-md, $font-regular, $color-black, 24px);
+                .navbar-collapse {
+                    ul {
+                        li {
+                            a {
+                                margin-right: 35px;
+                                @include styleText($text-md, $font-regular, $color-black, 24px);
 
-                &:hover {
-                    border-bottom: 2px solid #030303;
-                    font-weight: $font-medium;
+                                &:hover {
+                                    border-bottom: 2px solid #030303;
+                                    font-weight: $font-medium;
+                                }
+                            }
 
-                    &::before {
-                        opacity: 1;
+                            .active {
+                                border-bottom: 2px solid #030303;
+                                font-weight: $font-medium;
+                            }
+                        }
                     }
                 }
             }
-
-            .active {
-                border-bottom: 2px solid #030303;
-                font-weight: $font-medium;
-            }
         }
     }
 }
+
 
 .carousel__big {
     background-image: url(../../img/image\ 6.png);
@@ -67,10 +116,24 @@ header {
     background-repeat: no-repeat;
     background-position: top;
 
+    @media screen and (max-width:1199.98px) {
+        width: 104%;
+    }
+
+
     .container {
         .carousel {
+            position: relative;
+
             .carousel-indicators {
                 bottom: 80px;
+
+                @media screen and (max-width:767.98px) {
+                    bottom: 10px;
+                }
+                @media screen and (max-width:575.98px) {
+                    bottom: -8px;
+                }
             }
 
             .carousel-indicators [data-bs-target] {
@@ -84,26 +147,96 @@ header {
 
             .carousel-inner {
                 overflow: hidden;
+                padding-bottom: 80px;
+                @media screen and (max-width:767.98px) {
+                    padding-bottom: 30px;
+                }
 
                 .carousel-item {
+
                     .carousel__wrap {
                         display: flex;
-                        padding: 10px 120px;
+                        padding: 0px 120px;
+
+                        @media screen and (max-width:991.98px) {
+                            padding-left: 70px;
+                        }
 
                         img {
-                            width: 70%;
-                            padding-bottom: 80px;
+                            width: 40%;
+                            padding-bottom: 40px;
+                            transform: rotateY(180deg);
+
+                            @media screen and (max-width:767.98px) {
+                                width: 35%;
+                            }
+
+
+
                         }
 
                         .carousel__content {
-                            padding-top: 90px;
+                            position: absolute;
+                            top: 100px;
+                            right: 180px;
+                            width: 35%;
+
+                            @media screen and (max-width:1199.98px) {
+                                top: 110px;
+                                right: 110px;
+                                width: 45%;
+                            }
+
+                            @media screen and (max-width:991.98px) {
+                                top: 60px;
+                                right: 30px;
+                                width: 55%;
+                            }
+
+                            @media screen and (max-width:767.98px) {
+                                top: -5px;
+                                right: 50px;
+                                width: 50%;
+                            }
+
+                            @media screen and (max-width:575.98px) {
+                                top: 0px;
+                                right: 60px;
+                                width: 50%;
+                                
+                            }
+
 
                             h3 {
                                 @include styleText ($text-xxl, $font-light, $color-black, 48px);
+
+                                @media screen and (max-width:991.98px) {
+                                    font-size: $text-xl;
+                                }
+
+                                @media screen and (max-width:767.98px) {
+                                    font-size: $text-lg;
+                                }
+
+                                @media screen and (max-width:575.98px) {
+                                    font-size: $text-md;
+                                }
+
                             }
 
                             p {
                                 @include styleText ($text-md, $font-light, $color-black, 24px);
+                                padding-top: 10px;
+
+                                @media screen and (max-width:767.98px) {
+                                    font-size: $text-sm;
+                                    padding-top: 5px;
+                                }
+
+                                @media screen and (max-width:575.98px) {
+                                    font-size: 14px;
+                                    padding-top: 0;
+                                }
                             }
 
                             button {
@@ -118,28 +251,81 @@ header {
                                     color: #F8B653;
                                     border: 1px solid #F8B653;
                                 }
+
+                                
+
+                                @media screen and (max-width:1199.98px) {
+                                    margin-top: 10px;
+                                }
+                                @media screen and (max-width:767.98px) {
+                                    padding: 5px 18px;
+                                    font-size: $text-sm;
+
+                                }
+                                @media screen and (max-width:575.98px) {
+                                    padding: 3px 14px;
+                                    font-size: 14px;
+                                }
                             }
-                            
+
                         }
                     }
                 }
             }
 
             .carousel-control-prev {
-                justify-content: left;
-
                 .carousel-control-prev-icon {
                     background-image: url(../../img/Polygon\ 2.png);
-                    height: 3rem;
+                    height: 3.5rem;
+                    position: absolute;
+                    top: 158px;
+                    left: 30px;
+
+                    @media screen and (max-width:1199.98px) {
+                        left: 5px;
+                        top: 130px;
+                    }
+
+                    @media screen and (max-width:767.98px) {
+                        height: 2.5rem;
+                        left: 3px;
+                        top: 75px;
+                    }
+                    @media screen and (max-width:575.98px) {
+                        height: 2rem;
+                        left: 1px;
+                        top: 55px;
+                    }
                 }
             }
 
             .carousel-control-next {
-                justify-content: right;
-
                 .carousel-control-next-icon {
                     background-image: url(../../img/Polygon\ 1.png);
-                    height: 3rem;
+                    height: 3.5rem;
+                    position: absolute;
+                    top: 158px;
+                    right: 35px;
+
+                    @media screen and (max-width:1199.98px) {
+                        right: 50px;
+                        top: 130px;
+                    }
+                    @media screen and (max-width:991.98px) {
+                        right: 35px;
+                        top: 130px;
+                    }
+
+                    @media screen and (max-width:767.98px) {
+                        height: 2.5rem;
+                        right: 22px;
+                        top: 75px;
+                    }
+                    @media screen and (max-width:575.98px) {
+                        height: 2rem;
+                        right: 15px;
+                        top: 55px;
+                    }
                 }
             }
         }
@@ -157,66 +343,75 @@ header {
     }
 
     .container {
-        padding-left: 55px;
+        padding-left: 60px;
 
         .product__item {
             margin-top: 60px;
 
             .card__wrap {
-                width: 330px;
+                width: 335px;
                 background-color: #F8F8F8;
+                height: 400px;
+                position: relative;
 
                 .card__body {
-                    padding: 28px;
-                    padding-bottom: 20px;
 
                     img {
-                        width: 220px;
-                        height: 156px;
-                        padding-left: 26px;
-                        padding-top: 20px;
+                        width: 70%;
+                        position: absolute;
+                        top: 5px;
+                        left: 50px;
                     }
 
                     h4 {
-                        padding-top: 28px;
+
                         @include styleText ($text-lg, $font-light, $color-black, 29px);
+                        position: absolute;
+                        left: 15px;
+                        bottom: 130px;
                     }
 
                     p {
                         @include styleText ($text-md, $font-light, #CBC9C9, 24px);
-                        padding-top: 14px;
+                        position: absolute;
+                        left: 15px;
+                        right: 5px;
+                        bottom: 75px;
                     }
                 }
 
                 .card__footer {
-                    display: flex;
-                    text-align: center;
-
                     .card__left {
-                        width: 50%;
-                        padding: 18px;
                         background-color: $color-buttonLeft;
                         @include styleText ($text-lg, $font-extraLight, $color-black, 29px);
+                        padding: 10px 35px;
                         cursor: pointer;
+                        position: absolute;
+                        bottom: 0px;
+                        left: 0;
 
                         &:hover {
                             background-color: transparent;
-                            border: 1px solid $color-buttonLeft;
                             font-weight: $font-bold;
+                            color: #F8B653;
                         }
                     }
 
-                    .card__right {
-                        width: 50%;
-                        padding: 18px;
-                        background-color: $color-buttonRight;
-                        @include styleText ($text-lg, $font-semibold, $color-black, 29px);
-                    }
+                }
+
+                .card__right {
+                    position: absolute;
+                    bottom: 0;
+                    right: 1px;
+                    padding: 10px 62px;
+                    background-color: $color-buttonRight;
+                    @include styleText ($text-lg, $font-semibold, $color-black, 29px);
                 }
             }
         }
     }
 }
+
 
 footer {
     img {

@@ -21,83 +21,101 @@
 </head>
 
 <body>
-    <header class="bg-dark">
-        <div class="container ">
-            <nav class="navbar navbar-dark header__nav ">
+    <header>
+        <div class="header__top">
+            <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="./img/image 3.png" alt="">
                 </a>
-                <div class="header__menu">
-                    <div class="menu__item">
+                <div class="header__item">
                         <a href="./index.html">
                             <img src="./img/image 8.png" alt="">
                         </a>
                         <span>
                             (1)
                         </span>
-                        <a href="#">
-                            <span>Login</span>
-                        </a>
-                        <a href="./register.html">
-                            <span>Register</span>
-                        </a>
+                        <ul>
+                            <li>
+                                <a href="#" class="header__login">Login</a>
+                            </li>
+                            <li>
+                                <a href="./register.html" class="header__register">Register</a>
+                            </li>
+                        </ul>
+                </div> 
+            </div>
+        </div>
+        <div class="header__menu">
+            <div class="container-xl">
+                <nav class=" navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active" >Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" >Men</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Woman</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Kid</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sport</a>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
-    </header>
-    <section class="menu">
-        <div class="container">
-            <ul>
-                <li>
-                    <a href="#" class="active">Home</a>
-                </li>
-                <li>
-                    <a href="#">Men</a>
-                </li>
-                <li>
-                    <a href="#">Woman</a>
-                </li>
-                <li>
-                    <a href="#">Kid</a>
-                </li>
-                <li>
-                    <a href="#">Sport</a>
-                </li>
-            </ul>
-        </div>
-    </section>
+</header>
     <section class="register">
         <div class="container">
             <h1>Register</h1> 
-            <div class="register__body">
+            <div class="register__form">
                 <form action="">
                     <div class="row">
-                        <div class="col-6">
-                            <div>
+                        <div class="col-6 form__left">
+                            <div class="input__item">
                                 <input type="text" placeholder="email"  pattern="[A-Za-z]"><span>(*)</span>
+                                <p class="input__line"></p>
                             </div>
-                            <div>
+                            <div class="input__item">
                                 <input type="text" placeholder="password" ><span>(*)</span>
+                                <p class="input__line"></p>
                             </div>
-                            <div>
+                            <div class="input__item">
                                 <input type="text" placeholder="password confirm" ><span>(*)</span>
+                                <p class="input__line"></p>
                             </div>
                             
                         </div>
-                        <div class="col-6 ">
-                            <div>
+                        <div class="col-6 form__left form__right ">
+                            <div class="input__item">
                                 <input type="text" placeholder="name" ><span>(*)</span>
+                                <p class="input__line"></p>
                             </div>
-                            <div>
+                            <div class="input__item">
                                 <input type="text" placeholder="phone" ><span>(*)</span>
+                                <p class="input__line"></p>
                             </div>
-                            <div>
+                            <div class="input__gender">
                                 <span>Gender</span>
                                 <input type="radio" id="male" name="gender" value="male">
-                                <label for="male">Male</label>
+                                <span>
+                                    <label for="male">Male</label>
+                                </span>
                                 <input type="radio" id="female" name="gender" value="female">
-                                <label for="female">feMale</label>
+                                <span>
+                                    <label for="female">Female</label>
+                                </span>
                             </div>
                             <button>Submit</button>
                         </div>
