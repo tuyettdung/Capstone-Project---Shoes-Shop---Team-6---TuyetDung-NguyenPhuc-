@@ -1,9 +1,36 @@
+header {
+    .header__top {
+        @media screen and (max-width:991.98px) {
+            width: 115%;
+        }
+
+        @media screen and (max-width:767.98px) {
+            width: 136%;
+        }
+
+        @media screen and (max-width:575.98px) {
+            width: 145%;
+        }
+    }
+
+}
+
 .register {
     .container {
         h1 {
             @include styleText ($text-xxl, $font-regular, $color-black, 48px);
             text-align: center;
             margin: 30px;
+
+            @media screen and (max-width:991.98px) {
+                margin-left: 150px;
+                font-size: 44px;
+            }
+
+            @media screen and (max-width:767.98px) {
+                margin-left: 210px;
+                font-size: 48px;
+            }
         }
 
         .register__form {
@@ -14,34 +41,64 @@
                     text-align: center;
                     padding: 0 80px;
 
+                    @media screen and (max-width:1199.98px) {
+                        padding: 0 120px;
+                    }
+
+                    @media screen and (max-width:991.98px) {
+                        margin-left: 35px;
+                        padding: 5px;
+                    }
+
+                    @media screen and (max-width:767.98px) {
+                        margin-left: 150px;
+                    }
+
+                    @media screen and (max-width:575.98px) {
+                        padding: 0;
+                        margin-left: 200px;
+                    }
+
                     .form__left {
 
                         .input__item {
+                            position: relative;
+
                             input {
                                 padding-left: 5px;
                                 margin-bottom: 40px;
                                 border: none;
                                 @include styleText ($text-lg, $font-regular, $color-black, 36px);
+                                border-bottom: 3px solid #AE18E2;
+                                @media screen and (max-width:767.98px) {
+                                    margin-left: 10px;
+                                    width: 530px;
+                                }
+
                             }
 
                             span {
+                                position: absolute;
+                                top: 12px;
+                                left: 335px;
                                 color: red;
                                 padding-left: 80px;
-                            }
-
-                            .input__line {
-                                position: relative;
-                                &::before {
-                                    position: absolute;
-                                    content: "";
-                                    bottom: 30px;
-                                    left: 50px;
-                                    width: 430px;
-                                    height: 4px;
-                                    background-color: rgba(174, 24, 226, 1);
-
+                                @media screen and (max-width:1199.98px) {
+                                    top: 10px;
+                                left: 275px;
                                 }
+                                @media screen and (max-width:991.98px) {
+                                    top: 8px;
+                                left: 265px;
+                                }
+    
+                                @media screen and (max-width:767.98px) {
+                                    top: 8px;
+                                left: 385px;
+                                }
+
                             }
+
                         }
                     }
 
@@ -50,18 +107,43 @@
                             text-align: left;
                             padding: 15px;
                             margin-left: 30px;
+                            @media screen and (max-width:767.98px) {
+                                margin-left: 100px;
+                                padding: 0;
+                            }
+                            @media screen and (max-width:575.98px) {
+                                margin-left: 10px;
+                                padding: 0;
+                            }
 
                             span {
                                 @include styleText ($text-xl, $font-regular, $color-black, 36px);
+                                
+                                @media screen and (max-width:991.98px) {
+                                    font-size: $text-xl;
+                                }
+                                @media screen and (max-width:767.98px) {
+                                    font-size: $text-lg;
+                                }
                             }
 
                             input {
                                 margin-left: 10px;
                             }
+
                             input[type=radio] {
                                 border: 0px;
                                 width: 10%;
                                 height: 1.5em;
+
+                                @media screen and (max-width:991.98px) {
+                                    width: 8%;
+                                    height: 1em;
+                                }
+                                @media screen and (max-width:767.98px) {
+                                    width: 7%;
+                                    height: 1em;
+                                }
                             }
 
                         }
@@ -73,6 +155,23 @@
                             background-color: #AE18E2;
                             border: none;
                             margin-right: 220px;
+
+
+                            @media screen and (max-width:1199.98px) {
+                                margin-left: 40px;
+                                margin-top: 30px;
+                            }
+                            @media screen and (max-width:991.98px) {
+                                padding: 5px 55px;
+                                margin-top: 25px;
+                                font-size: $text-md;
+                            }
+
+                            @media screen and (max-width:767.98px) {
+                                padding: 4px 40px;
+                                margin-top: 10px;
+                                font-size: $text-sm;
+                            }
                         }
                     }
                 }
@@ -80,3 +179,5 @@
         }
     }
 }
+
+
